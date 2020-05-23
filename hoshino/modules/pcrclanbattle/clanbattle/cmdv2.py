@@ -927,7 +927,7 @@ MD = MemberDao()
 async def uploadPredit(bot: NoneBot, ctx: Context_T, args: ParseResult):
     alt = ctx["group_id"]
     uid = args["@"] or args.at or ctx["user_id"]
-    damage = args["X"]
+    damage = args[""]
     boss = args["B"]
     type = args["D"]
 
