@@ -2,7 +2,7 @@ import os
 from functools import partial, wraps
 from typing import Any, Callable, List, Optional, Dict
 from urllib.parse import urlsplit, urlunsplit
-from sqlite3 import PARSE_COLNAMES, PARSE_DECLTYPES
+# from sqlite3 import PARSE_COLNAMES, PARSE_DECLTYPES
 
 from sqlalchemy import MetaData, Table
 from sqlalchemy.engine import create_engine
@@ -18,7 +18,7 @@ from config import DEBUG
 DB_PATH = os.path.expanduser("~/.hoshino/clanbattle.db")
 DB_ARGS = {
     "check_same_thread": False,
-    "detect_types": PARSE_COLNAMES | PARSE_DECLTYPES,
+    # "detect_types": PARSE_COLNAMES | PARSE_DECLTYPES,
 }
 ItemDict_T = Dict[str, Any]
 
